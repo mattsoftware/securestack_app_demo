@@ -33,13 +33,4 @@ export class CdkpipelinesDemoStack extends Stack {
     });
   }
 }
-Add lib/lambda/handler.ts and put in the following code. This defines a simple AWS Lambda handler:
 
-import { APIGatewayProxyEvent, APIGatewayProxyResult, Context } from 'aws-lambda';
-
-export async function handler(event: APIGatewayProxyEvent, context: Context): Promise<APIGatewayProxyResult> {
-  return {
-    body: 'Hello from a Lambda Function',
-    statusCode: 200,
-  };
-}
